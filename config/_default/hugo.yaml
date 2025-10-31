@@ -63,8 +63,17 @@ related:
 security:
   enableInlineShortcodes: false
   exec:
-    allow: ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', '^pandoc$', '^nvim$', 'code$']
-    osEnv: ['(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$']
+    allow:
+      - '^dart-sass-embedded$'
+      - '^sass$'
+      - '^go$'
+      - '^npx$'
+      - '^postcss$'
+      - '^pandoc$'
+      - '^nvim$'
+      - 'code$'
+    osEnv:
+      - '(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$'
   funcs:
     getenv:
       - ^HUGO

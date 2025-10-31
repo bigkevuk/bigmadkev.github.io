@@ -1,16 +1,17 @@
-{{ $file := .Get "file"}}
+
+{{ $file := .Get "file" }}
 {{ $shouldRender := default true (.Get "render") }}
-{{ with resources.GetRemote $file }}
-  {{ with .Err }}
-    {{ errorf "%s" . }}
-  {{ else }}
-    {{ if $shouldRender }}
-        {{ $lang := path.Ext $file | strings.TrimPrefix "." }}
-        {{ highlight .Content $lang }}
-    {{ else }}
-        {{ .Content | $.Page.RenderString }}
-    {{ end }}
-  {{ end }}
+
+{{ $res := try (resources.GetRemote $file) }}
+
+{{ if $res.Err }}
+  {{ warnf "Unable to fetch remote resource: %s (%s)" $file $res.Err }}
 {{ else }}
-  {{ errorf "Unable to get remote resource." }}
+  {{ $remote := $res.Value }}
+  {{ if $shouldRender }}
+    {{ $lang := path.Ext $file | strings.TrimPrefix "." }}
+    {{ highlight $remote.Content $lang }}
+  {{ else }}
+    {{ $remote.Content | $.Page.RenderString }}
+  {{ end }}
 {{ end }}

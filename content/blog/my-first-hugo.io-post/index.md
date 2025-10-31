@@ -6,7 +6,6 @@ noindex: false
 featured: false
 pinned: false
 comments: false
-images: false
 series:
 #  -
 categories:
@@ -30,10 +29,8 @@ Just dumping some thoughts out for now
 <!--more-->
 Will add more to this once I've had time to sit down and think about this first post.
 
-<!-- ![External Example](https://thumbnails.production.thenounproject.com/m7movu-7I8zOyGZHzsqcJSZ6aBA=/fit-in/1000x1000/photos.production.thenounproject.com/photos/A3587720-549F-48A9-9B6B-A3BBBF2CB4B5.jpg)
-
 ## Raw code file from GitHub
 {{< ghcode file="https://raw.githubusercontent.com/gohugoio/hugo/master/commands/env.go" >}}
 
 ## Markdown from GitHub
-{{< ghcode file="https://raw.githubusercontent.com/gohugoio/hugo/master/README.md" render=false >}} -->
+{{< ghcode file="https://raw.githubusercontent.com/gohugoio/hugo/master/README.md" render=false >}}
