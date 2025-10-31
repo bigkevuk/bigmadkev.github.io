@@ -16,21 +16,16 @@ hb:
     # see https://hbstack.dev/en/docs/modules/socials/.
     socials:
       github: bigmadkev
-      x: bigmadkev
       linkedin: kevmccabe
       instagram: bigmadkev
-      threads: bigmadkev
-      mastodon: bigmadkev
   footer:
     powered_by: false
     # see https://hbstack.dev/en/docs/modules/socials/.
     socials:
       _color: true # when false, remove the color of social icons.
       github: bigmadkev
-      x: bigmadkev
       linkedin: kevmccabe
       instagram: bigmadkev
-      threads: bigmadkev
   blog:
     full_width: true # when true, the blog layout takes full width.
     sidebar:

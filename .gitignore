@@ -1,6 +1,6 @@
 .hugo_build.lock
 hugo_stats.json
 package-json.lock
-/public/
-/resources/
+public/
+resources/
 node_modules/
