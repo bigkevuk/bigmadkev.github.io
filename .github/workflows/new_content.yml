@@ -44,6 +44,9 @@ jobs:
       HUGO_VERSION: 0.152.2
       TZ: Europe/London
     steps:
+      - name: Create directory for user-specific executable files
+        run: |
+          mkdir -p "${HOME}/.local"
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
