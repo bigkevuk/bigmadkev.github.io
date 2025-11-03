@@ -3,10 +3,10 @@ title: Blog
 menu:
   main:
     identifier: blog
-    weight: 4
+    weight: 2
     params:
       icon:
-        vendor: fas
-        name: blog
+        vendor: bs
+        name: rss
 images: []
 ---
